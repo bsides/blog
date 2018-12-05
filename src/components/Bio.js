@@ -24,7 +24,7 @@ class Bio extends React.Component {
   render() {
     return (
       <BioWrapper>
-        <img src={profilePic} alt={`Kyle Mathews`} />
+        <img src={profilePic} alt={`Rafael "BSIDES" Pereira`} />
         <p>
           Escrito por <strong>Rafael "BSIDES" Pereira</strong>, morador de São
           Paulo e desenvolvedor web há um tempão!{' '}
