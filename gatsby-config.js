@@ -4,9 +4,9 @@ module.exports = {
     author: 'Rafael "BSIDES" Pereira',
     description:
       'Blog em português sobre desenvolvimento web, JavaScript, HTML, CSS, frameworks e outros devaneios',
-    siteUrl: 'https://bsides.github.io/blog/',
+    siteUrl: 'https://rafaelp.com.br/',
   },
-  pathPrefix: '/blog',
+  // pathPrefix: '/blog',
   plugins: [
     { resolve: `gatsby-plugin-styled-components` },
     {
