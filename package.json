@@ -32,18 +32,9 @@
     "react-dom": "^16.5.1",
     "react-helmet": "^5.2.0",
     "styled-components": "^4.1.2",
-    "typeface-archivo-narrow": "^0.0.54",
-    "typeface-fauna-one": "^0.0.54",
     "typeface-ibm-plex-mono": "^0.0.61",
-    "typeface-lato": "^0.0.54",
     "typeface-lora": "^0.0.54",
-    "typeface-merriweather": "^0.0.54",
-    "typeface-oswald": "^0.0.54",
-    "typeface-playfair-display": "^0.0.54",
-    "typeface-quicksand": "^0.0.54",
-    "typeface-raleway": "^0.0.54",
-    "typeface-roboto": "^0.0.54",
-    "typeface-zilla-slab": "^0.0.54"
+    "typeface-merriweather": "^0.0.54"
   },
   "devDependencies": {
     "eslint": "^4.19.1",

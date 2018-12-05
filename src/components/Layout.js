@@ -14,18 +14,21 @@ const HeadingStyled = styled.h1`
     }
   }
 `
-const LinkStyled = styled(Link)`
-  text-decoration: 'none';
-  color: 'inherit';
-`
 const SubHeadingStyled = styled.h3`
   margin-top: 0;
   margin-bottom: -1rem;
+  a {
+    background: rgb(153, 0, 0);
+    color: white;
+    &:hover {
+      border: none;
+    }
+  }
 `
 const GeneralWrapper = styled.div`
   margin-left: 'auto';
   margin-right: 'auto';
-  max-width: 1200px;
+  max-width: 740px;
   padding: 1.5rem 0.75rem;
 `
 const Grid = styled.div`
@@ -47,6 +50,10 @@ const Grid = styled.div`
     display: block;
     max-width: 100%;
   }
+  @media only screen and (max-width: 768px) {
+    display: block;
+    max-width: 100%;
+  }
 `
 
 class Layout extends React.Component {
@@ -58,13 +65,13 @@ class Layout extends React.Component {
     if (location.pathname === rootPath) {
       header = (
         <HeadingStyled>
-          <LinkStyled to={'/'}>{title}</LinkStyled>
+          <Link to={'/'}>{title}</Link>
         </HeadingStyled>
       )
     } else {
       header = (
         <SubHeadingStyled>
-          <LinkStyled to={'/'}>{title}</LinkStyled>
+          <Link to={'/'}>{title}</Link>
         </SubHeadingStyled>
       )
     }

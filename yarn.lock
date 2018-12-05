@@ -12392,25 +12392,10 @@ typedarray@^0.0.6:
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
-typeface-archivo-narrow@^0.0.54:
-  version "0.0.54"
-  resolved "https://registry.yarnpkg.com/typeface-archivo-narrow/-/typeface-archivo-narrow-0.0.54.tgz#69860ee1e8e8467d1ff1225df66139fd9046fd60"
-  integrity sha512-gRnkb8qdf2EYqFqWfNpHyLQjhOYTYGIiTVek8E/0aEpN/VkHDXj7LYadjTLp5YAVcz9cznHa1LPcVPZw+/jK/w==
-
-typeface-fauna-one@^0.0.54:
-  version "0.0.54"
-  resolved "https://registry.yarnpkg.com/typeface-fauna-one/-/typeface-fauna-one-0.0.54.tgz#14c930b1984ddfc51fd5032c053f414ac5903a8a"
-  integrity sha512-n9IeXRXh199W9Gr0cajzXcMzkG13lQyKxxzWwxAsEhg1UtImqPGtxqeoI1p00hL9LKSO90Nk8C46jsj/Mkzp2g==
-
 typeface-ibm-plex-mono@^0.0.61:
   version "0.0.61"
   resolved "https://registry.yarnpkg.com/typeface-ibm-plex-mono/-/typeface-ibm-plex-mono-0.0.61.tgz#ee7f12643e2bfee5c5c6915350005d6dfdaa66fd"
   integrity sha512-4Pzza33ihcW1l9qSs6WmRRb6FxVoDvpoTws55V9rwN7zVqURFh1c/i4qWCmHJ0Dyr0c+pYgQVyb/aAwsRjv2Lg==
-
-typeface-lato@^0.0.54:
-  version "0.0.54"
-  resolved "https://registry.yarnpkg.com/typeface-lato/-/typeface-lato-0.0.54.tgz#6ea56309a8b0cfdb7e8246e05de4b58b8272b47c"
-  integrity sha512-2/oP5YrXCBSLg+N2ZdWnMbJ0PRIidrJVFHgRoLxo5MNsdu9eE4aBwsoEY/K/+9rKdktGO8zpiXBYPRn9F6U/Sw==
 
 typeface-lora@^0.0.54:
   version "0.0.54"
@@ -12421,36 +12406,6 @@ typeface-merriweather@^0.0.54:
   version "0.0.54"
   resolved "https://registry.yarnpkg.com/typeface-merriweather/-/typeface-merriweather-0.0.54.tgz#a6b694d93c7ac432e26e8d7797a19afe83844186"
   integrity sha512-K3DOVMCE/KNapWBJ8vW15G44JSl7OVVr2mfy8cuZfY8ZDSiqGKF+Pk1VB/lD7TRaLJlmV11ytwoQ8z+3Z+2n4g==
-
-typeface-oswald@^0.0.54:
-  version "0.0.54"
-  resolved "https://registry.yarnpkg.com/typeface-oswald/-/typeface-oswald-0.0.54.tgz#1e253011622cdd50f580c04e7d625e7f449763d7"
-  integrity sha512-U1WMNp4qfy4/3khIfHMVAIKnNu941MXUfs3+H9R8PFgnoz42Hh9pboSFztWr86zut0eXC8byalmVhfkiKON/8Q==
-
-typeface-playfair-display@^0.0.54:
-  version "0.0.54"
-  resolved "https://registry.yarnpkg.com/typeface-playfair-display/-/typeface-playfair-display-0.0.54.tgz#32a210d27e8dcbfbd6eebd63108af26d115838a0"
-  integrity sha512-geSEULjSeJrysLvneiH/Czq2FNXeRCUJCv81UmFmi6xQ4okYUpAOP7y4OLsKC2+4ewHQTEMxPUf+zeIko2v5YQ==
-
-typeface-quicksand@^0.0.54:
-  version "0.0.54"
-  resolved "https://registry.yarnpkg.com/typeface-quicksand/-/typeface-quicksand-0.0.54.tgz#d8f60bcfbea663cda97a0e973f24e6c35d76561a"
-  integrity sha512-jArArHAh3UdLfoybVAoRgjAT+otdRwI+MIrwHNPuUE2FdWUyg8WqwteTo7YSoQPPE7IwkdCh1EBuJKicF49EzQ==
-
-typeface-raleway@^0.0.54:
-  version "0.0.54"
-  resolved "https://registry.yarnpkg.com/typeface-raleway/-/typeface-raleway-0.0.54.tgz#f166c517becc81f34d14e72736d28b8923c79c65"
-  integrity sha512-oilrvv0fV+z4eYvfTAl6t9Oq1mE/ZrLDPM71TrcAtqyVb0QzAJ6hQBS+FQcYdHxK2LGQE+gloQUPtwgY2I7WxA==
-
-typeface-roboto@^0.0.54:
-  version "0.0.54"
-  resolved "https://registry.yarnpkg.com/typeface-roboto/-/typeface-roboto-0.0.54.tgz#8f02c9a18d1cfa7f49381a6ff0d21ff061f38ad2"
-  integrity sha512-sOFA1FXgP0gOgBYlS6irwq6hHYA370KE3dPlgYEJHL3PJd5X8gQE0RmL79ONif6fL5JZuGDj+rtOrFeOqz5IZQ==
-
-typeface-zilla-slab@^0.0.54:
-  version "0.0.54"
-  resolved "https://registry.yarnpkg.com/typeface-zilla-slab/-/typeface-zilla-slab-0.0.54.tgz#15dd53e50a7a0071ef8eb25e6fa1bd30fbc88842"
-  integrity sha512-WvwsGsPtPZtJEfGP8SPI2bnLmPlGq1l8/N/2XPSjEF0qgIXzktoXQHxO6jBIvrvh260tUsn5wfxU2OtQVxU55w==
 
 u2r@x.x.x:
   version "0.1.3"

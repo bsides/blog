@@ -1,16 +1,7 @@
 import { createGlobalStyle } from 'styled-components'
 import 'typeface-merriweather'
 import 'typeface-ibm-plex-mono'
-// import 'typeface-zilla-slab'
 import 'typeface-lora'
-// import 'typeface-roboto'
-// import 'typeface-quicksand'
-// import 'typeface-playfair-display'
-// import 'typeface-fauna-one'
-// import 'typeface-raleway'
-// import 'typeface-lato'
-// import 'typeface-archivo-narrow'
-// import 'typeface-oswald'
 
 const windowGlobal = typeof window !== 'undefined' && window
 const isFirefox =
@@ -90,7 +81,7 @@ const GlobalStyle = createGlobalStyle`
   blockquote {
     font-style: italic;
     color: #686868;
-    margin: 0 0 1.4736842105em -1.8rem;
+    margin: 0 0 1.4736842105em;
   }
   /* blockquote {
     margin-left: -1.5rem;
