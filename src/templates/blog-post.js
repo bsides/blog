@@ -2,6 +2,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import { Link, graphql } from 'gatsby'
 import styled from 'styled-components'
+import { formatDateToLocale } from '../utils/helper'
 
 import Bio from '../components/Bio'
 import Layout from '../components/Layout'
@@ -20,14 +21,6 @@ const ListStyled = styled.ul`
   list-style-type: none;
   padding: 0;
 `
-const monthNames = () => {
-  return Array.from({ length: 12 }, (x, index) =>
-    new Date(0, index).toLocaleDateString('pt-BR', { month: 'short' })
-  )
-}
-function capitalizeFirstLetter(string) {
-  return string[0].toUpperCase() + string.slice(1)
-}
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -36,10 +29,7 @@ class BlogPostTemplate extends React.Component {
     const siteDescription = post.excerpt
     const { previous, next } = this.props.pageContext
 
-    const theDate = new Date(post.frontmatter.date)
-    const ptDate = `${theDate.getDay()} / ${
-      monthNames()[theDate.getMonth()]
-    } / ${theDate.getFullYear()}`
+    const ptDate = formatDateToLocale(new Date(post.frontmatter.date))
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
@@ -93,7 +83,7 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
-        date(formatString: "DD MMMM, YYYY")
+        date(formatString: "MMMM DD, YYYY")
       }
     }
   }

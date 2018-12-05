@@ -2,6 +2,7 @@ import React from 'react'
 import { Link, graphql } from 'gatsby'
 import Helmet from 'react-helmet'
 import styled from 'styled-components'
+import { formatDateToLocale } from '../utils/helper'
 
 import Bio from '../components/Bio'
 import Layout from '../components/Layout'
@@ -33,7 +34,9 @@ class BlogIndex extends React.Component {
               <H3Styled>
                 <LinkStyled to={node.fields.slug}>{title}</LinkStyled>
               </H3Styled>
-              <small>{node.frontmatter.date}</small>
+              <small>
+                {formatDateToLocale(new Date(node.frontmatter.date))}
+              </small>
               <p
                 dangerouslySetInnerHTML={{
                   __html: node.frontmatter.description || node.excerpt,
@@ -65,7 +68,7 @@ export const pageQuery = graphql`
             slug
           }
           frontmatter {
-            date(formatString: "DD MMMM, YYYY")
+            date(formatString: "MMMM DD, YYYY")
             title
             description
           }
