@@ -12,6 +12,7 @@ const DateStyled = styled.p`
   margin-top: -1rem;
 `
 const Ruler = styled.hr`
+  margin-top: 2rem;
   margin-bottom: 4rem;
 `
 const ListStyled = styled.ul`

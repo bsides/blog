@@ -49,7 +49,7 @@ arquivo separado e chamar ele onde preciso que seja usado. Criei um arquivo
 `helper.js` e chamei o método direto onde precisei formatar a data. O conteúdo
 desse arquivo segue abaixo:
 
-```
+```javascript
 function monthNames() {
   return Array.from({ length: 12 }, (x, index) =>
     new Date(0, index).toLocaleDateString('pt-BR', { month: 'short' })

@@ -43,6 +43,10 @@ const Grid = styled.div`
     padding-left: 20px;
     border-left: 3px solid black;
   }
+  @media only screen and (max-device-width: 480px) {
+    display: block;
+    max-width: 100%;
+  }
 `
 
 class Layout extends React.Component {
