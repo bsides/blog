@@ -2,16 +2,28 @@ import React from 'react'
 import { Link, graphql } from 'gatsby'
 import Helmet from 'react-helmet'
 import styled from 'styled-components'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faReadme } from '@fortawesome/free-brands-svg-icons'
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
+
 import { formatDateToLocale } from '../utils/helper'
 
 import Bio from '../components/Bio'
 import Layout from '../components/Layout'
 import SEO from '../components/SEO'
+import ReadMore from '../components/styled/ReadMore'
+
+library.add(faReadme, faArrowRight)
 
 const H3Styled = styled.h3`
-  margin-bottom: 0.25rem;
+  margin-bottom: 0;
 `
-const LinkStyled = styled(Link)``
+const DateStyled = styled.small`
+  margin-bottom: 1rem;
+  display: block;
+  font-size: 1.2rem;
+`
 
 class BlogIndex extends React.Component {
   render() {
@@ -29,16 +41,22 @@ class BlogIndex extends React.Component {
           return (
             <div key={node.fields.slug}>
               <H3Styled>
-                <LinkStyled to={node.fields.slug}>{title}</LinkStyled>
+                <Link to={node.fields.slug}>{title}</Link>
               </H3Styled>
-              <small>
+              <DateStyled>
                 {formatDateToLocale(new Date(node.frontmatter.date))}
-              </small>
+              </DateStyled>
               <p
                 dangerouslySetInnerHTML={{
                   __html: node.frontmatter.description || node.excerpt,
                 }}
               />
+              <ReadMore to={node.fields.slug}>
+                <span className="read-more-content">Leia mais</span>
+                <span className="icon">
+                  <FontAwesomeIcon icon={faArrowRight} />
+                </span>
+              </ReadMore>
             </div>
           )
         })}

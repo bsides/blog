@@ -8,8 +8,11 @@ const isFirefox =
   windowGlobal && window.navigator.userAgent.indexOf('Firefox') !== -1
 
 const GlobalStyle = createGlobalStyle`
-  @import './reboot.css';
-
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
   a {
     color: rgb(153, 0, 0);
     text-decoration: none;

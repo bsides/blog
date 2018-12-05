@@ -1,8 +1,9 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import styled from 'styled-components'
+import styled, { ThemeProvider } from 'styled-components'
 
 import { GlobalStyle } from '../assets/globalStyles'
+import { theme } from '../utils/theme'
 
 const HeadingStyled = styled.h1`
   margin-top: 0;
@@ -76,13 +77,15 @@ class Layout extends React.Component {
       )
     }
     return (
-      <Grid>
-        <GlobalStyle />
-        <GeneralWrapper>
-          {header}
-          {children}
-        </GeneralWrapper>
-      </Grid>
+      <ThemeProvider theme={theme}>
+        <Grid>
+          <GlobalStyle />
+          <GeneralWrapper>
+            {header}
+            {children}
+          </GeneralWrapper>
+        </Grid>
+      </ThemeProvider>
     )
   }
 }
