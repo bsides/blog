@@ -12,6 +12,10 @@ import 'typeface-lora'
 // import 'typeface-archivo-narrow'
 // import 'typeface-oswald'
 
+const windowGlobal = typeof window !== 'undefined' && window
+const isFirefox =
+  windowGlobal && window.navigator.userAgent.indexOf('Firefox') !== -1
+
 const GlobalStyle = createGlobalStyle`
   @import './reboot.css';
   a {
@@ -39,9 +43,7 @@ const GlobalStyle = createGlobalStyle`
     font-size: 1.8rem;
     line-height: 1.75;
     color: hsla(0, 0%, 0%, 0.9);
-    font-weight: ${
-      window.navigator.userAgent.indexOf('Firefox') === -1 ? 400 : 300
-    };
+    font-weight: ${isFirefox ? 300 : 400};
   }
   h1,h2,h3,h4,h5,h6 {
     /* color: rgb(96, 102, 102); */
