@@ -1,11 +1,21 @@
-# gatsby-starter-blog
-Gatsby starter for creating a blog
+# Blog do Rafael Pereira
 
-Install this starter (assuming Gatsby is installed) by running from your CLI:
+[In english](README_EN.md)
 
-`gatsby new gatsby-blog https://github.com/gatsbyjs/gatsby-starter-blog`
+Esse é o conteúdo fonte do blog https://www.rafaelp.com.br
 
-Or [view the live demo here](https://gatsby-starter-blog-demo.netlify.com/).
+Feito com [Gatsby](https://www.gatsbyjs.org) e hospedado no
+[Netlify](https://www.netlify.com).
 
-## Running in development
-`gatsby develop`
+## Desenvolvimento
+
+Se por acaso quiser desenvolver tendo esse blog como ponto de partida, é só
+clonar esse repositório, entrar na pasta, instalar as dependências e rodar
+`yarn start` ou `npm run develop`.
+
+```
+git clone git@github.com:bsides/blog.git
+cd blog
+yarn
+yarn start
+```
