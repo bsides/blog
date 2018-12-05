@@ -26,8 +26,8 @@ resolução.
 
 ## O dilema da língua, parte 2
 
-Meu devaneio no primeiro post (ainda não sei linkar pro post dentro do
-markdown!) me fez pensar que eu deveria então escrever tudo em português,
+Meu devaneio no [primeiro post](/2018-12-03-primeiro-post) ~~(ainda não sei linkar pro post dentro do
+markdown!)~~ me fez pensar que eu deveria então escrever tudo em português,
 incluindo [os commits](https://github.com/bsides/blog/commits/master). Ainda
 não estou certo que esse é o melhor caminho, mas estou tentando!
 

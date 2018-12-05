@@ -63,20 +63,33 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        //trackingId: `ADD YOUR TRACKING ID HERE`,
+        trackingId: `UA-50702825-1`,
       },
     },
+    'gatsby-plugin-catch-links',
     `gatsby-plugin-feed`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `Blog do Rafael Pereira`,
+        short_name: `rafaelp.com.br`,
         start_url: `/`,
         background_color: `#ffffff`,
-        theme_color: `#663399`,
+        theme_color: `#990000`,
         display: `minimal-ui`,
-        icon: `src/assets/gatsby-icon.png`,
+        icon: `src/assets/profile.jpg`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Blog do Rafael Pereira`,
+        short_name: `rafaelp.com.br`,
+        start_url: `/`,
+        background_color: `#ffffff`,
+        theme_color: `#990000`,
+        display: `minimal-ui`,
+        icon: `src/assets/profile.jpg`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-offline`,

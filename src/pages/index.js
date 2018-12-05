@@ -6,6 +6,7 @@ import { formatDateToLocale } from '../utils/helper'
 
 import Bio from '../components/Bio'
 import Layout from '../components/Layout'
+import SEO from '../components/SEO'
 
 const H3Styled = styled.h3`
   margin-bottom: 0.25rem;
@@ -21,11 +22,7 @@ class BlogIndex extends React.Component {
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
-        <Helmet
-          htmlAttributes={{ lang: 'pt-BR' }}
-          meta={[{ name: 'description', content: siteDescription }]}
-          title={siteTitle}
-        />
+        <SEO />
         <Bio />
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug

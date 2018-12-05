@@ -6,6 +6,7 @@ import { formatDateToLocale } from '../utils/helper'
 
 import Bio from '../components/Bio'
 import Layout from '../components/Layout'
+import SEO from '../components/SEO'
 
 const DateStyled = styled.p`
   margin-bottom: 1rem;
@@ -28,17 +29,18 @@ class BlogPostTemplate extends React.Component {
     const post = this.props.data.markdownRemark
     const siteTitle = this.props.data.site.siteMetadata.title
     const siteDescription = post.excerpt
-    const { previous, next } = this.props.pageContext
+    const { previous, next, slug } = this.props.pageContext
 
     const ptDate = formatDateToLocale(new Date(post.frontmatter.date))
-
+    console.log(this.props)
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <Helmet
-          htmlAttributes={{ lang: 'en' }}
+          htmlAttributes={{ lang: 'pt-BR' }}
           meta={[{ name: 'description', content: siteDescription }]}
           title={`${post.frontmatter.title} | ${siteTitle}`}
         />
+        <SEO postPath={slug} postNode={post} postSEO />
         <article>
           <h1>{post.frontmatter.title}</h1>
           <DateStyled>{ptDate}</DateStyled>
