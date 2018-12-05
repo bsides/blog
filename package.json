@@ -1,10 +1,10 @@
 {
-  "name": "gatsby-starter-blog",
-  "description": "Starter Gatsby Blog",
+  "name": "rafael-pereira-blog",
+  "description": "Blog em português sobre desenvolvimento web, JavaScript, HTML, CSS, frameworks e outros devaneios",
   "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Rafael \"BSIDES\" Pereira <rafaelbsides@gmail.com>",
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby-starter-blog/issues"
+    "url": "https://github.com/bsides/blog/issues"
   },
   "dependencies": {
     "babel-plugin-styled-components": "^1.9.2",
@@ -51,7 +51,7 @@
     "gh-pages": "^1.2.0",
     "prettier": "^1.14.2"
   },
-  "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
+  "homepage": "https://github.com/bsides/blog#readme",
   "keywords": [
     "gatsby"
   ],
@@ -59,7 +59,7 @@
   "main": "n/a",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
+    "url": "git+https://github.com/bsides/blog.git"
   },
   "scripts": {
     "dev": "gatsby develop",

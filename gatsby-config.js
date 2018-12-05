@@ -1,12 +1,12 @@
 module.exports = {
   siteMetadata: {
-    title: 'Rafael "BSIDES" Blog',
+    title: 'Blog do Rafael Pereira',
     author: 'Rafael "BSIDES" Pereira',
     description:
       'Blog em português sobre desenvolvimento web, JavaScript, HTML, CSS, frameworks e outros devaneios',
-    siteUrl: 'https://rafaelp.com.br/',
+    siteUrl: 'https://bsides.github.io/blog/',
   },
-  pathPrefix: '/gatsby-starter-blog',
+  pathPrefix: '/blog',
   plugins: [
     { resolve: `gatsby-plugin-styled-components` },
     {
