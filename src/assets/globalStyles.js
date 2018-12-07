@@ -16,6 +16,7 @@ const GlobalStyle = createGlobalStyle`
   a {
     color: rgb(153, 0, 0);
     text-decoration: none;
+
   }
   a:hover {
     color: rgb(153, 0, 0);
@@ -98,6 +99,13 @@ const GlobalStyle = createGlobalStyle`
     overflow: hidden;
     padding: 0 0 0 1.263157895em;
   } */
+  a.gatsby-resp-image-link:hover {
+    text-decoration: none;
+    border: 0;
+  }
+  .gatsby-resp-image-wrapper {
+    max-width: 740px;
+  }
 `
 
 export { GlobalStyle }
