@@ -32,7 +32,6 @@ class BlogPostTemplate extends React.Component {
     const { previous, next, slug } = this.props.pageContext
 
     const ptDate = formatDateToLocale(new Date(post.frontmatter.date))
-    console.log(this.props)
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <Helmet
