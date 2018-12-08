@@ -36,7 +36,13 @@ class BlogPostTemplate extends React.Component {
       <Layout location={this.props.location} title={siteTitle}>
         <Helmet
           htmlAttributes={{ lang: 'pt-BR' }}
-          meta={[{ name: 'description', content: siteDescription }]}
+          meta={[
+            { name: 'description', content: siteDescription },
+            {
+              name: 'google-site-verification',
+              content: 'lKU0mSyB09mFh-C2-hGD-yUM-xPHCUkoaPEUOjVapPk',
+            },
+          ]}
           title={`${post.frontmatter.title} | ${siteTitle}`}
         />
         <SEO postPath={slug} postNode={post} postSEO />

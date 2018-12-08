@@ -34,6 +34,16 @@ class BlogIndex extends React.Component {
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
+        <Helmet
+          htmlAttributes={{ lang: 'pt-BR' }}
+          meta={[
+            { name: 'description', content: siteDescription },
+            {
+              name: 'google-site-verification',
+              content: 'lKU0mSyB09mFh-C2-hGD-yUM-xPHCUkoaPEUOjVapPk',
+            },
+          ]}
+        />
         <SEO />
         <Bio />
         {posts.map(({ node }) => {
