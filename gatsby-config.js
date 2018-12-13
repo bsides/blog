@@ -4,7 +4,7 @@ module.exports = {
     author: 'Rafael "BSIDES" Pereira',
     description:
       'Blog em português sobre desenvolvimento web, JavaScript, HTML, CSS, frameworks e outros devaneios',
-    siteUrl: 'https://rafaelp.com.br/',
+    siteUrl: 'https://rafaelp.com.br',
   },
   // pathPrefix: '/blog',
   plugins: [
@@ -92,6 +92,7 @@ module.exports = {
         icon: `src/assets/profile.jpg`, // This path is relative to the root of the site.
       },
     },
+    `gatsby-plugin-sitemap`,
     // `gatsby-plugin-offline`,
     `gatsby-plugin-remove-serviceworker`,
     `gatsby-plugin-react-helmet`,
