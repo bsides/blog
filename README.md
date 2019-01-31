@@ -1,4 +1,4 @@
-# Blog do Rafael Pereira
+# Blog do Rafa
 
 [In english](README_EN.md)
 

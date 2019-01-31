@@ -1,6 +1,8 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import { Link } from 'gatsby'
 import styled, { ThemeProvider } from 'styled-components'
+import Footer from './Footer'
+import Header from './Header'
 
 import { GlobalStyle } from '../assets/globalStyles'
 import { theme } from '../utils/theme'
@@ -35,6 +37,8 @@ const GeneralWrapper = styled.div`
 const Grid = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 10px 740px 10px 1fr 1fr;
+  // margin-top: -6rem;
+  margin-bottom: 6rem;
   > * {
     grid-column: 4;
   }
@@ -78,13 +82,14 @@ class Layout extends React.Component {
     }
     return (
       <ThemeProvider theme={theme}>
-        <Grid>
-          <GlobalStyle />
-          <GeneralWrapper>
-            {header}
-            {children}
-          </GeneralWrapper>
-        </Grid>
+        <Fragment>
+          <Header />
+          <Grid>
+            <GlobalStyle />
+            <GeneralWrapper>{children}</GeneralWrapper>
+          </Grid>
+          <Footer />
+        </Fragment>
       </ThemeProvider>
     )
   }

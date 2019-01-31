@@ -18,6 +18,7 @@ library.add(faReadme, faArrowRight)
 
 const H3Styled = styled.h3`
   margin-bottom: 0;
+  text-shadow: 2px 3px 0px #555555;
 `
 const DateStyled = styled.small`
   margin-bottom: 1rem;
@@ -45,7 +46,6 @@ class BlogIndex extends React.Component {
           ]}
         />
         <SEO />
-        <Bio />
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
           return (

@@ -5,8 +5,8 @@ import { Link } from 'gatsby'
 const ReadMore = styled(Link)`
   /* border: 1px solid ${props => props.theme.primary}; */
   /* border-radius: 4px; */
-  border: 1px solid ${props => props.theme.primaryLight};
-  color: ${props => props.theme.primary};
+  border: 1px solid rgb(40,16,152);
+  color: rgb(232, 72, 208);
   display: inline-block;
   overflow: hidden;
   padding: 1.2rem 6rem 1.2rem 0.1rem;
@@ -14,7 +14,8 @@ const ReadMore = styled(Link)`
   -webkit-text-decoration: none;
   text-decoration: none;
   line-height: 1;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
+  font-family: 'Press Start 2P', 'Lora', 'Georgia', 'serif';
   .read-more-content {
     font-size: 1em;
     line-height: 1.2;
@@ -26,7 +27,7 @@ const ReadMore = styled(Link)`
     text-align: left;
   }
   .icon {
-    border-left: 1px solid ${props => props.theme.primaryLight};
+    border-left: 1px solid rgb(40, 16, 152);
     position: absolute;
     right: 0;
     text-align: center;
@@ -37,7 +38,7 @@ const ReadMore = styled(Link)`
     height: 70%;
     svg {
       position: relative;
-      top: 50%;
+      top: 48%;
       transform: translateY(-50%);
     }
   }
@@ -48,7 +49,7 @@ const ReadMore = styled(Link)`
     bottom: 0;
     right: 0;
     left: 0;
-    background-color: ${props => props.theme.primary};
+    background-color: rgb(232, 72, 208);
     opacity: 0;
     transition: opacity 300ms ease;
   }
@@ -63,7 +64,7 @@ const ReadMore = styled(Link)`
       width: 100%;
     }
     &:after {
-      opacity: .2;
+      opacity: .5;
     }
   }
 `

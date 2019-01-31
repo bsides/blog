@@ -1,7 +1,7 @@
 module.exports = {
-  siteTitle: 'Blog do Rafael Pereira', // Site title.
+  siteTitle: 'Blog do Rafa', // Site title.
   siteTitleShort: 'Rafaelp', // Short site title for homescreen (PWA). Preferably should be under 12 characters to prevent truncation.
-  siteTitleAlt: 'Blog do Rafael Pereira', // Alternative site title for SEO.
+  siteTitleAlt: 'Blog do Rafa', // Alternative site title for SEO.
   siteUrl: 'https://www.rafaelp.com.br', // Domain of your website without pathPrefix.
   siteLogo:
     'https://en.gravatar.com/userimage/10460/4f3b224af280f7ccfff14dd2a9883fba.png?size=150', // Logo used for SEO
