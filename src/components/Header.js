@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import backgroundHeader from '../assets/bg-clouds3.png'
+import backgroundHeader from '../assets/bg-clouds3a.png'
 import imgLogo from '../assets/logo.png'
 
 const HeaderWrapper = styled.header`
@@ -11,10 +11,10 @@ const HeaderWrapper = styled.header`
   justify-content: center;
   flex-direction: column;
   width: 100%;
-  text-align: center;
+  text-align: left;
   align-items: center;
-  position: relative;
-  z-index: 2;
+  position: fixed;
+  top: 0;
 
   img {
     width: auto;
@@ -37,7 +37,13 @@ const HeaderWrapper = styled.header`
     visibility: hidden;
   }
   div {
-    width: 740px;
+    @media (min-width: 740px) {
+      width: 740px;
+    }
+    a {
+      border: 0;
+      text-decoration: none;
+    }
   }
 `
 
@@ -46,8 +52,10 @@ class Header extends React.Component {
     return (
       <HeaderWrapper>
         <div>
-          <h1>Blog do Rafa</h1>
-          <img src={imgLogo} />
+          <a href="/">
+            <h1>Blog do Rafa</h1>
+            <img src={imgLogo} />
+          </a>
         </div>
       </HeaderWrapper>
     )

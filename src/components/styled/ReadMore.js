@@ -6,7 +6,7 @@ const ReadMore = styled(Link)`
   /* border: 1px solid ${props => props.theme.primary}; */
   /* border-radius: 4px; */
   border: 1px solid rgb(40,16,152);
-  color: rgb(232, 72, 208);
+  color: #00e0ff;
   display: inline-block;
   overflow: hidden;
   padding: 1.2rem 6rem 1.2rem 0.1rem;
@@ -49,7 +49,8 @@ const ReadMore = styled(Link)`
     bottom: 0;
     right: 0;
     left: 0;
-    background-color: rgb(232, 72, 208);
+    background-color: #00e0ff;
+    /* background-color: rgb(232, 72, 208); */
     opacity: 0;
     transition: opacity 300ms ease;
   }

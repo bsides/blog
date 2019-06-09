@@ -23,6 +23,15 @@ const ListStyled = styled.ul`
   list-style-type: none;
   padding: 0;
 `
+const Article = styled.article`
+  margin-top: -30px;
+  /* display: grid;
+  grid-template-columns: 1fr 1fr 10px 740px 10px 1fr 1fr; */
+
+  & > * {
+    /* grid-column: 4; */
+  }
+`
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -32,6 +41,13 @@ class BlogPostTemplate extends React.Component {
     const { previous, next, slug } = this.props.pageContext
 
     const ptDate = formatDateToLocale(new Date(post.frontmatter.date))
+    const createFullPostMarkup = () => {
+      return {
+        __html: `<h1>${
+          post.frontmatter.title
+        }</h1><DateStyled>${ptDate}</DateStyled>${post.html}`,
+      }
+    }
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <Helmet
@@ -46,11 +62,12 @@ class BlogPostTemplate extends React.Component {
           title={`${post.frontmatter.title} | ${siteTitle}`}
         />
         <SEO postPath={slug} postNode={post} postSEO />
-        <article>
+        {/* <article>
           <h1>{post.frontmatter.title}</h1>
           <DateStyled>{ptDate}</DateStyled>
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
-        </article>
+        </article> */}
+        <Article dangerouslySetInnerHTML={createFullPostMarkup()} />
         <Ruler />
         <Bio />
 
