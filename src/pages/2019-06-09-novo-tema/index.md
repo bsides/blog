@@ -6,7 +6,7 @@ description: >-
   Consegui fazer um novo tema, algo que estava guardado no meu PC há muito
   tempo. É muito mais polêmico, divertido e com muita personalidade.
 tags:
-  - javascript
+  - tema
   - ''
 ---
 
@@ -27,4 +27,13 @@ o anterior.
 
 Irei dar mais destaque aos meus dados que por enquanto seguem o layout antigo.
 Também quero brincar mais com os pixels do céu no topo e adicionar uma barra de
-vida com meu avatar (e um link pro [meu twitter](https://www.twitter.com/bsides))
+vida com meu avatar (e um link pro [meu twitter](https://twitter.com/bsides)).
+
+Também quero atualizar as versões de tudo que já estão super antigas.
+
+## Sugestões?
+
+O que achou? Me envie sua opinião ou sugestão via
+[twitter](https://twitter.com/bsides) ou veja
+[esse post](/2018-12-03-primeiro-post) (dê scroll até o fim) pra ver outras
+opções!

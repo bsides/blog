@@ -53,7 +53,7 @@ const Grid = styled.div`
   blockquote {
     grid-column: 3 / 5;
     padding-left: 20px;
-    border-left: 3px solid black;
+    border-left: 3px solid white;
   }
   @media only screen and (max-device-width: 480px) {
     display: block;

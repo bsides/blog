@@ -121,6 +121,7 @@ const GlobalStyle = createGlobalStyle`
   blockquote {
     font-style: italic;
     color: #686868;
+    color: #fff;
     margin: 0 0 1.4736842105em;
   }
   /* blockquote {
