@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Blog do Rafael Pereira',
+    title: 'Blog do Rafa',
     author: 'Rafael "BSIDES" Pereira',
     description:
       'Blog em português sobre desenvolvimento web, JavaScript, HTML, CSS, frameworks e outros devaneios',
@@ -71,7 +71,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Blog do Rafael Pereira`,
+        name: `Blog do Rafa`,
         short_name: `rafaelp.com.br`,
         start_url: `/`,
         background_color: `#ffffff`,
@@ -83,7 +83,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Blog do Rafael Pereira`,
+        name: `Blog do Rafa`,
         short_name: `rafaelp.com.br`,
         start_url: `/`,
         background_color: `#ffffff`,
