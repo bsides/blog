@@ -78,9 +78,7 @@ convenceram que esse não é o melhor caminho.
 Existe bastante material a respeito sobre esse tema, mas separei alguns que
 dizem bastante do que eu penso também:
 
-* [ November 5th, 2018
-Comments
-React vs. Angular: The Complete Comparison](https://programmingwithmosh.com/react/react-vs-angular/) (React vs. Angular: Uma Comparação Completa), por [Mosh Hamedani](https://programmingwithmosh.com/) em 5-Nov-2018
+* [React vs. Angular: The Complete Comparison](https://programmingwithmosh.com/react/react-vs-angular/) (React vs. Angular: Uma Comparação Completa), por [Mosh Hamedani](https://programmingwithmosh.com/) em 5-Nov-2018
 * [Why Angular Made Me Quit Web Dev](https://hackernoon.com/why-angular-made-me-quit-web-dev-f63b83a157af) (Por que Angular Me Fez Desistir Do
 Desenvolvimento Web), por [Tobias Merkle]() em 4-Nov-2018
 * [Angular - Stop Already!](https://medium.com/@chillypenguin/stopping-angular-40ea642c484d) (Angular - Apenas Pare!), por [Mark Brown](https://medium.com/@chillypenguin) em 5-Mai-2018
