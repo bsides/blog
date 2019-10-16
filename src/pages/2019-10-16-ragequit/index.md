@@ -6,10 +6,10 @@ description: >-
   Você coloca um link pro seu blog no currículo e aí o que acontece? As pessoas
   leem! 😉 (ainda bem)
 tags:
+  - blog
+  - feedback
   - angular
-  - frameworks
-  - react
-  - framework
+  - entrevista
 ---
 
 Tive um feedback que
