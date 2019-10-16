@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
 title: 'Ragequit & Resolução'
-date: 2019-08-21T10:36:53.875Z
+date: 2019-10-16T11:45:53.875Z
 description: >-
   Você coloca um link pro seu blog no currículo e aí o que acontece? As pessoas
   leem! 😉 (ainda bem)
