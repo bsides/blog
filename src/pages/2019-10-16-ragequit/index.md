@@ -35,4 +35,4 @@ grato por ter iniciado esse projeto e mais forte pra continuar.
 Bonito isso né?
 
 Aliás estou com um novo conteúdo inspiradasso numa entrevista e devo soltar
-em breve 👍
+em breve. Dica: é sobre CSS 😱😁
