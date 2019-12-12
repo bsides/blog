@@ -3,9 +3,8 @@ templateKey: blog-post
 title: 'Egghead por US$ 49 (R$ 230 com IOF)'
 date: 2019-12-11T21:18:53.875Z
 description: >-
-  Promoção de fim de ano do [Egghead](https://egghead.io) tá incrível, mas achei
-  que pudesse ficar melhor. Devido à situação do país, pedi a eles mais desconto
-  - e eles deram!
+  Promoção de fim de ano do Egghead tá incrível, mas achei que pudesse ficar
+  melhor. Devido à situação do país, pedi a eles mais desconto - e eles deram!
 tags:
   - blog
   - feedback
@@ -14,20 +13,25 @@ tags:
 ---
 
 Antes que me perguntem, eu não tenho nenhuma filiação ou algo a ver com a
-empresa em si. Sou só um fã do serviços deles e muito desesperado pra ter um ano
-bom em 2020. Pra qualquer um que passe por aqui também 👍
+empresa em si. Sou só um fã do serviços deles e muito desesperado pra ter um
+ano bom em 2020. Pra qualquer um que passe por aqui também 👍
 
-## TL;DR: 86% de desconto no plano anual
+## TL;DR: Me dá o link!
 
 Link da promoção, que expira em uns 4 dias e só é válido para o Brasil:
 https://egghead.io/s/mjtd6
+
+Ajude retuitando pros amigos e colegas também:
+
+https://twitter.com/bsides/status/1204775693600604160?s=20
 
 ## O acaso de um email marketing
 
 Ontem recebi um email marketing do [Egghead](https://egghead.io)
 ([Twitter](https://twitter.com/eggheadio)) mostrando mais um curso incrível
-sobre algo que queria saber mais (
-[Suspense em React](https://egghead.io/courses/use-suspense-to-simplify-your-async-ui), do [Kent C Dodds](https://twitter.com/kentcdodds)) e foi então que resolvi
+sobre algo que queria saber mais
+([Suspense em React](https://egghead.io/courses/use-suspense-to-simplify-your-async-ui),
+do [Kent C Dodds](https://twitter.com/kentcdodds)) e foi então que resolvi
 responder dizendo o quanto gostava do site, o quanto me ajudou na minha
 carreira e... o quanto é inacessível a nós brasileiros.
 
@@ -35,8 +39,8 @@ carreira e... o quanto é inacessível a nós brasileiros.
 
 O site todo está em promoção de fim de ano, de US$ 350 pra US$ 150. É um baita
 desconto. Entretanto, mesmo sendo muito bom, ainda é um bocado salgado
-pra nós. Dia 10 de Dezembro, quando enviei o email, o dólar no Nubank (
-[PTAX](https://pt.wikipedia.org/wiki/Ptax)) estava em R$ 4,31. Fazendo uma
+pra nós. Dia 10 de Dezembro, quando enviei o email, o dólar no Nubank
+([PTAX](https://pt.wikipedia.org/wiki/Ptax)) estava em R$ 4,31. Fazendo uma
 conta rápida, 150 dólares são 646 reais e ainda tem o IOF (cerca de R$ 45), o
 que representa mais de 65% do salário mínimo brasileiro. Estou falando do
 preço promocional, agora imagina o preço normal?

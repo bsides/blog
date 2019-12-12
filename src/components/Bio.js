@@ -24,11 +24,11 @@ class Bio extends React.Component {
   render() {
     return (
       <BioWrapper>
-        <img src={profilePic} alt={`Rafael "BSIDES" Pereira`} />
+        <img src={profilePic} alt={`Rafael "BSIDES" Pereira`} width="60" />
         <p>
           Escrito por{' '}
           <a href="https://twitter.com/bsides">
-            <strong>Rafael "BSIDES" Pereira</strong>
+            <strong>Rafael @bsides Pereira</strong>
           </a>
           , apaixonado por games e desenvolvedor web frontend há um tempão!
         </p>

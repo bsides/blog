@@ -67,7 +67,7 @@ const GlobalStyle = createGlobalStyle`
   }
   h1,h2,h3,h4,h5,h6 {
     /* color: rgb(96, 102, 102); */
-    color: #ffffff;
+    color: #d89020;
     font-family: 'Press Start 2P', 'Lora', 'Georgia', 'serif';
     font-weight: 600;
     font-size: 5rem;
@@ -78,7 +78,7 @@ const GlobalStyle = createGlobalStyle`
     font-weight: normal;
 
     a {
-      color: #ffffff;
+      color: #f8d800;
       padding: 0 0.5rem;
       margin: 0 -0.5rem;
     }
@@ -92,7 +92,7 @@ const GlobalStyle = createGlobalStyle`
     }
   }
   article > h1 {
-    font-size: 4rem;
+    font-size: 3rem;
   }
   article h2, article h3, article h4, article h5, article h6 {
     margin-top: 6rem;
@@ -101,11 +101,12 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'Rubik', -system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol", 'Merriweather', 'Georgia', 'serif';
   } */
   h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
   h3 {
     font-size: 1.8rem;
   }
+  article h3 { font-size: 1.5rem; }
   h4 {
     font-size: 1.3rem;
   }
