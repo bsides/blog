@@ -18,7 +18,7 @@ library.add(faReadme, faArrowRight)
 
 const H3Styled = styled.h3`
   margin-bottom: 0;
-  text-shadow: 2px 3px 0px #555555;
+  text-shadow: 2px 3px 0px #480000;
 `
 const DateStyled = styled.small`
   margin-bottom: 1rem;

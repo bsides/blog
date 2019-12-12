@@ -58,6 +58,12 @@ module.exports = {
         ],
       },
     },
+    {
+      resolve: 'gatsby-transformer-remark',
+      options: {
+        plugins: ['@weknow/gatsby-remark-twitter'],
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
