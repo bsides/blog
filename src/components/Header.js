@@ -37,12 +37,32 @@ const HeaderWrapper = styled.header`
     visibility: hidden;
   }
   div {
+    position: relative;
     @media (min-width: 740px) {
       width: 740px;
     }
     a {
       border: 0;
       text-decoration: none;
+    }
+    a.quem {
+      position: absolute;
+      left: 320px;
+      top: 37px;
+      background: #080458;
+      color: rgb(0, 216, 216);
+      padding: 5px 10px;
+      cursor: pointer;
+      transform: rotateZ(-18deg);
+      font-family: 'Press Start 2P', Lora, Georgia, serif;
+      text-transform: uppercase;
+      display: block;
+      font-size: 1.6rem;
+
+      &:hover {
+        background: #b09000;
+        color: rgb(8, 4, 88);
+      }
     }
   }
 `
@@ -55,6 +75,9 @@ class Header extends React.Component {
           <a href="/">
             <h1>Blog do Rafa</h1>
             <img src={imgLogo} />
+          </a>
+          <a class="quem" href="/sobre">
+            Quem?
           </a>
         </div>
       </HeaderWrapper>

@@ -7,9 +7,12 @@ description: >-
   melhor. Devido à situação do país, pedi a eles mais desconto - e eles deram!
 tags:
   - blog
-  - feedback
-  - angular
-  - entrevista
+  - egghead
+  - link
+  - parity purchase power
+  - promocao
+  - desconto
+  - curso
 ---
 
 Antes que me perguntem, eu não tenho nenhuma filiação ou algo a ver com a
