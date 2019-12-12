@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
 title: 'Egghead por US$ 49 (R$ 230 com IOF)'
-date: 2019-10-16T11:45:53.875Z
+date: 2019-12-11T21:18:53.875Z
 description: >-
   Promoção de fim de ano do [Egghead](https://egghead.io) tá incrível, mas achei
   que pudesse ficar melhor. Devido à situação do país, pedi a eles mais desconto
@@ -14,8 +14,8 @@ tags:
 ---
 
 Antes que me perguntem, eu não tenho nenhuma filiação ou algo a ver com a
-empresa em si. Sou só um fã do método e muito desesperado pra ter um ano bom em
-2020 👍
+empresa em si. Sou só um fã do serviços deles e muito desesperado pra ter um ano
+bom em 2020. Pra qualquer um que passe por aqui também 👍
 
 ## TL;DR: 86% de desconto no plano anual
 
