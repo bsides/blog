@@ -1,7 +1,8 @@
 import { createGlobalStyle } from 'styled-components'
 import 'typeface-merriweather'
-import 'typeface-ibm-plex-mono'
-import 'typeface-lora'
+import 'typeface-press-start-2p'
+// import 'typeface-ibm-plex-mono'
+// import 'typeface-lora'
 
 import imgBackground from '../assets/bg-stars.png'
 
@@ -21,9 +22,6 @@ const GlobalStyle = createGlobalStyle`
   --light-cloud: #3848c8;
   --super-yellow: #ff0;
   --link-cyan: #00e0ff;
-
-  @import url(https://fonts.googleapis.com/css?family=Press+Start+2P);
-  @import url('https://fonts.googleapis.com/css?family=Rubik:400,400i,500,500i,700,700i,900,900i');
 
   *,
   *::before,
@@ -50,7 +48,7 @@ const GlobalStyle = createGlobalStyle`
     'Courier New', Courier, monospace !important;
     font-size: 1em;
   }
-  html,body {
+  html, body {
     font-size: 10px;
     background-color: #05141a;
     background-color: #000020;
@@ -65,7 +63,7 @@ const GlobalStyle = createGlobalStyle`
     font-weight: ${isFirefox ? 300 : 400};
     /*background: url(${imgBackground});*/
   }
-  h1,h2,h3,h4,h5,h6 {
+  h1, h2, h3, h4, h5, h6 {
     /* color: rgb(96, 102, 102); */
     color: #d89020;
     font-family: 'Press Start 2P', 'Lora', 'Georgia', 'serif';
@@ -91,10 +89,10 @@ const GlobalStyle = createGlobalStyle`
       padding: 5px 5px 3px;
     }
   }
-  article > h1 {
+  .post h1 {
     font-size: 3rem;
   }
-  article h2, article h3, article h4, article h5, article h6 {
+  .post h2, .post h3, .post h4, .post h5, .post h6 {
     margin-top: 6rem;
   }
   /* h3 ~ p {
@@ -106,7 +104,7 @@ const GlobalStyle = createGlobalStyle`
   h3 {
     font-size: 1.8rem;
   }
-  article h3 { font-size: 1.5rem; }
+  .post h3 { font-size: 1.5rem; }
   h4 {
     font-size: 1.3rem;
   }

@@ -45,6 +45,7 @@
     "typeface-ibm-plex-mono": "^0.0.61",
     "typeface-lora": "^0.0.54",
     "typeface-merriweather": "^0.0.54",
+    "typeface-press-start-2p": "0.0.72",
     "url-join": "^4.0.0"
   },
   "devDependencies": {

@@ -76,7 +76,7 @@ class Header extends React.Component {
             <h1>Blog do Rafa</h1>
             <img src={imgLogo} />
           </a>
-          <a class="quem" href="/sobre">
+          <a className="quem" href="/sobre">
             Quem?
           </a>
         </div>

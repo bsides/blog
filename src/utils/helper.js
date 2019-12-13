@@ -1,5 +1,5 @@
 function monthNames() {
-  return Array.from({ length: 12 }, (x, index) =>
+  return Array.from({ length: 12 }, (_, index) =>
     new Date(0, index).toLocaleDateString('pt-BR', { month: 'short' })
   )
 }

@@ -17,7 +17,7 @@ const Ruler = styled.hr`
   margin-bottom: 4rem;
 `
 const ListStyled = styled.ul`
-  display: flex;
+  display: ${props => (props.hide ? 'none' : 'flex')};
   flex-wrap: wrap;
   justify-content: space-between;
   list-style-type: none;
@@ -43,13 +43,12 @@ class BlogPostTemplate extends React.Component {
     const ptDate = formatDateToLocale(new Date(post.frontmatter.date))
     const createFullPostMarkup = () => {
       return {
-        __html: `<h1>${
-          post.frontmatter.title
-        }</h1><DateStyled>${ptDate}</DateStyled>${post.html}`,
+        __html: `<h1>${post.frontmatter.title}</h1><DateStyled>${ptDate}</DateStyled>${post.html}`,
       }
     }
+    const isSingle = post.fields.slug === '/sobre/'
     return (
-      <Layout location={this.props.location} title={siteTitle}>
+      <Layout location={this.props.location} title={siteTitle} className="post">
         <Helmet
           htmlAttributes={{ lang: 'pt-BR' }}
           meta={[
@@ -71,7 +70,7 @@ class BlogPostTemplate extends React.Component {
         <Ruler />
         <Bio />
 
-        <ListStyled>
+        <ListStyled hide={isSingle}>
           <li>
             {previous && (
               <Link to={previous.fields.slug} rel="prev">
@@ -109,6 +108,9 @@ export const pageQuery = graphql`
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
+      }
+      fields {
+        slug
       }
     }
   }

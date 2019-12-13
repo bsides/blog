@@ -69,11 +69,11 @@ const Grid = styled.div`
   }
 `
 function onScroll() {
-  var logo = document.querySelector('header a')
+  var logo = document.querySelectorAll('header a')
   if (window.scrollY > 100) {
-    logo.style.display = 'none'
+    logo.forEach(l => (l.style.display = 'none'))
   } else {
-    logo.style.display = 'block'
+    logo.forEach(l => (l.style.display = 'block'))
   }
 }
 class Layout extends React.Component {
@@ -106,7 +106,7 @@ class Layout extends React.Component {
         <Fragment>
           <GlobalStyle />
           <Header />
-          <Grid>
+          <Grid {...this.props}>
             <GeneralWrapper>{children}</GeneralWrapper>
           </Grid>
           <Footer />
