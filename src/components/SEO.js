@@ -95,6 +95,7 @@ class SEO extends React.Component {
         <meta name="twitter:title" content={title} />
         <meta name="twitter:description" content={description} />
         <meta name="twitter:image" content={image} />
+        <title>title</title>
       </Helmet>
     )
   }
