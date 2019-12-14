@@ -34,6 +34,10 @@ const GeneralWrapper = styled.div`
   background: rgba(0, 0, 0, 0.5);
   box-shadow: 0 0 50px rgb(0, 0, 0);
   margin: 0 auto;
+
+  @media (min-width: 992px) {
+    max-width: 924px;
+  }
 `
 const Grid = styled.div`
   margin-top: 275px;
@@ -65,11 +69,11 @@ const Grid = styled.div`
   }
 `
 function onScroll() {
-  var logo = document.querySelector('header a')
+  var logo = document.querySelectorAll('header a')
   if (window.scrollY > 100) {
-    logo.style.display = 'none'
+    logo.forEach(l => (l.style.display = 'none'))
   } else {
-    logo.style.display = 'block'
+    logo.forEach(l => (l.style.display = 'block'))
   }
 }
 class Layout extends React.Component {
@@ -102,7 +106,7 @@ class Layout extends React.Component {
         <Fragment>
           <GlobalStyle />
           <Header />
-          <Grid>
+          <Grid {...this.props}>
             <GeneralWrapper>{children}</GeneralWrapper>
           </Grid>
           <Footer />

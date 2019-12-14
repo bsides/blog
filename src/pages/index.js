@@ -34,7 +34,7 @@ class BlogIndex extends React.Component {
     const posts = data.allMarkdownRemark.edges
 
     return (
-      <Layout location={this.props.location} title={siteTitle}>
+      <Layout location={this.props.location} title={siteTitle} className="home">
         <Helmet
           htmlAttributes={{ lang: 'pt-BR' }}
           meta={[
@@ -49,7 +49,7 @@ class BlogIndex extends React.Component {
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
           return (
-            <div key={node.fields.slug}>
+            <article key={node.fields.slug}>
               <H3Styled>
                 <Link to={node.fields.slug}>{title}</Link>
               </H3Styled>
@@ -67,7 +67,7 @@ class BlogIndex extends React.Component {
                   <FontAwesomeIcon icon={faArrowRight} />
                 </span>
               </ReadMore>
-            </div>
+            </article>
           )
         })}
       </Layout>
@@ -85,7 +85,10 @@ export const pageQuery = graphql`
         description
       }
     }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMarkdownRemark(
+      sort: { fields: [frontmatter___date], order: DESC }
+      filter: { fields: { slug: { ne: "/sobre/" } } }
+    ) {
       edges {
         node {
           excerpt

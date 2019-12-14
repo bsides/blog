@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: 'Blog do Rafa',
-    author: 'Rafael "BSIDES" Pereira',
+    author: 'Rafael @bsides Pereira',
     description:
       'Blog em português sobre desenvolvimento web, JavaScript, HTML, CSS, frameworks e outros devaneios',
     siteUrl: 'https://rafaelp.com.br',
