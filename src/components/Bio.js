@@ -30,7 +30,8 @@ class Bio extends React.Component {
           <a href="https://twitter.com/bsides">
             <strong>Rafael @bsides Pereira</strong>
           </a>
-          , apaixonado por games e desenvolvedor web frontend há um tempão!
+          , apaixonado por games e desenvolvedor web há um tempão!{' '}
+          <a href="/sobre">Leia mais sobre ele</a>.
         </p>
       </BioWrapper>
     )
