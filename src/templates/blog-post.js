@@ -1,13 +1,31 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import Helmet from 'react-helmet'
 import { Link, graphql } from 'gatsby'
 import styled from 'styled-components'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCalendarAlt, faClock } from '@fortawesome/free-solid-svg-icons'
+
 import { formatDateToLocale } from '../utils/helper'
 
 import Bio from '../components/Bio'
 import Layout from '../components/Layout'
 import SEO from '../components/SEO'
+import Separator from '../components/styled/Separator'
 
+import reactStringReplace from 'react-string-replace'
+
+const MetaInfo = styled.div`
+  padding-bottom: 3rem;
+
+  p {
+    display: inline;
+    margin: 0;
+    padding-right: 1.5rem;
+  }
+  svg {
+    margin-right: 1rem;
+  }
+`
 const DateStyled = styled.p`
   margin-bottom: 1rem;
   margin-top: -1rem;
@@ -24,7 +42,6 @@ const ListStyled = styled.ul`
   padding: 0;
 `
 const Article = styled.article`
-  margin-top: -30px;
   /* display: grid;
   grid-template-columns: 1fr 1fr 10px 740px 10px 1fr 1fr; */
 
@@ -32,6 +49,24 @@ const Article = styled.article`
     /* grid-column: 4; */
   }
 `
+const ReadingTime = styled.p``
+
+const FullPostMarkup = ({ title, theDate, readTime, children }) => (
+  <Fragment>
+    <h1>{title}</h1>
+    <MetaInfo>
+      <DateStyled>
+        <FontAwesomeIcon icon={faCalendarAlt} title="Data do artigo" />
+        {theDate}
+      </DateStyled>
+      <ReadingTime>
+        <FontAwesomeIcon icon={faClock} title="Tempo de leitura" />
+        {readTime} de leitura
+      </ReadingTime>
+    </MetaInfo>
+    {children}
+  </Fragment>
+)
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -41,12 +76,23 @@ class BlogPostTemplate extends React.Component {
     const { previous, next, slug } = this.props.pageContext
 
     const ptDate = formatDateToLocale(new Date(post.frontmatter.date))
-    const createFullPostMarkup = () => {
-      return {
-        __html: `<h1>${post.frontmatter.title}</h1><DateStyled>${ptDate}</DateStyled>${post.html}`,
-      }
-    }
+
+    const origMinutes = post.fields.readingTime.minutes.toFixed(2)
+    let minutes = Number(origMinutes)
+      .toLocaleString('pt-BR')
+      .replace(',', 'min')
+      .concat('s')
+    minutes = reactStringReplace(minutes, 'min', (match, i) => (
+      <Separator>{match}</Separator>
+    ))
+    minutes = reactStringReplace(minutes, 's', (match, i) => (
+      <Separator>{match}</Separator>
+    ))
+    if (origMinutes < 1) minutes = 'Menos de 1 minuto'
+
+    const createFullPostMarkup = () => ({ __html: post.html })
     const isSingle = post.fields.slug === '/sobre/'
+
     return (
       <Layout location={this.props.location} title={siteTitle} className="post">
         <Helmet
@@ -66,7 +112,13 @@ class BlogPostTemplate extends React.Component {
           <DateStyled>{ptDate}</DateStyled>
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
         </article> */}
-        <Article dangerouslySetInnerHTML={createFullPostMarkup()} />
+        <FullPostMarkup
+          title={post.frontmatter.title}
+          theDate={ptDate}
+          readTime={minutes}
+        >
+          <Article dangerouslySetInnerHTML={createFullPostMarkup()} />
+        </FullPostMarkup>
         <Ruler />
         <Bio />
 
@@ -111,6 +163,9 @@ export const pageQuery = graphql`
       }
       fields {
         slug
+        readingTime {
+          minutes
+        }
       }
     }
   }
