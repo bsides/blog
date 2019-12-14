@@ -12,8 +12,6 @@ import Layout from '../components/Layout'
 import SEO from '../components/SEO'
 import Separator from '../components/styled/Separator'
 
-import reactStringReplace from 'react-string-replace'
-
 const MetaInfo = styled.div`
   padding-bottom: 3rem;
 
@@ -61,7 +59,8 @@ const FullPostMarkup = ({ title, theDate, readTime, children }) => (
       </DateStyled>
       <ReadingTime>
         <FontAwesomeIcon icon={faClock} title="Tempo de leitura" />
-        {readTime} de leitura
+        {readTime}
+        <Separator>min</Separator> de leitura
       </ReadingTime>
     </MetaInfo>
     {children}
@@ -77,19 +76,7 @@ class BlogPostTemplate extends React.Component {
 
     const ptDate = formatDateToLocale(new Date(post.frontmatter.date))
 
-    const origMinutes = post.fields.readingTime.minutes.toFixed(2)
-    let minutes = Number(origMinutes)
-      .toLocaleString('pt-BR')
-      .replace(',', 'min')
-      .concat('s')
-    minutes = reactStringReplace(minutes, 'min', (match, i) => (
-      <Separator>{match}</Separator>
-    ))
-    minutes = reactStringReplace(minutes, 's', (match, i) => (
-      <Separator>{match}</Separator>
-    ))
-    if (origMinutes < 1) minutes = 'Menos de 1 minuto'
-
+    const ttr = post.timeToRead
     const createFullPostMarkup = () => ({ __html: post.html })
     const isSingle = post.fields.slug === '/sobre/'
 
@@ -115,7 +102,7 @@ class BlogPostTemplate extends React.Component {
         <FullPostMarkup
           title={post.frontmatter.title}
           theDate={ptDate}
-          readTime={minutes}
+          readTime={ttr}
         >
           <Article dangerouslySetInnerHTML={createFullPostMarkup()} />
         </FullPostMarkup>
@@ -167,6 +154,7 @@ export const pageQuery = graphql`
           minutes
         }
       }
+      timeToRead
     }
   }
 `

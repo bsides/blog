@@ -13,6 +13,7 @@ import Bio from '../components/Bio'
 import Layout from '../components/Layout'
 import SEO from '../components/SEO'
 import ReadMore from '../components/styled/ReadMore'
+import Separator from '../components/styled/Separator'
 
 library.add(faReadme, faArrowRight)
 
@@ -20,10 +21,19 @@ const H3Styled = styled.h3`
   margin-bottom: 0;
   text-shadow: 2px 3px 0px #480000;
 `
+const MetaInfo = styled.div`
+  small {
+    font-size: 1.2rem;
+  }
+`
 const DateStyled = styled.small`
   margin-bottom: 1rem;
-  display: block;
-  font-size: 1.2rem;
+  padding-right: 1rem;
+`
+const ReadingTime = styled.small`
+  i {
+    padding-right: 1rem;
+  }
 `
 
 class BlogIndex extends React.Component {
@@ -53,9 +63,15 @@ class BlogIndex extends React.Component {
               <H3Styled>
                 <Link to={node.fields.slug}>{title}</Link>
               </H3Styled>
-              <DateStyled>
-                {formatDateToLocale(new Date(node.frontmatter.date))}
-              </DateStyled>
+              <MetaInfo>
+                <DateStyled>
+                  {formatDateToLocale(new Date(node.frontmatter.date))}
+                </DateStyled>
+                <ReadingTime>
+                  <i>·</i> {node.timeToRead}
+                  <Separator>min</Separator> de leitura
+                </ReadingTime>
+              </MetaInfo>
               <p
                 dangerouslySetInnerHTML={{
                   __html: node.frontmatter.description || node.excerpt,
@@ -91,7 +107,7 @@ export const pageQuery = graphql`
     ) {
       edges {
         node {
-          excerpt
+          excerpt(format: HTML)
           fields {
             slug
           }
@@ -100,6 +116,7 @@ export const pageQuery = graphql`
             title
             description
           }
+          timeToRead
         }
       }
     }
