@@ -59,6 +59,11 @@ const HeaderWrapper = styled.header`
       display: block;
       font-size: 1.6rem;
 
+      @media only screen and (max-device-width: 480px) {
+        left: 215px;
+        top: 130px;
+      }
+
       &:hover {
         background: #b09000;
         color: rgb(8, 4, 88);
