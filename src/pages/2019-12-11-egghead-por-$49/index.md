@@ -3,8 +3,10 @@ templateKey: blog-post
 title: 'Egghead por US$ 49 (R$ 230 com IOF)'
 date: 2019-12-11T21:18:53.875Z
 description: >-
-  Promoção de fim de ano do Egghead tá incrível, mas achei que pudesse ficar
-  melhor. Devido à situação do país, pedi a eles mais desconto - e eles deram!
+  Promoção de fim de ano do
+  <a href="https://egghead.io" target="_blank">Egghead</a> tá incrível, mas
+  achei que pudesse ficar melhor. Devido à situação do país, pedi a eles mais
+  desconto - e eles deram!
 tags:
   - blog
   - egghead

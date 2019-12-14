@@ -91,6 +91,7 @@ const GlobalStyle = createGlobalStyle`
   }
   .post h1 {
     font-size: 3rem;
+    margin-top: 0;
   }
   .post h2, .post h3, .post h4, .post h5, .post h6 {
     margin-top: 6rem;

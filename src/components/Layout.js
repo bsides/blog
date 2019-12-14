@@ -34,10 +34,6 @@ const GeneralWrapper = styled.div`
   background: rgba(0, 0, 0, 0.5);
   box-shadow: 0 0 50px rgb(0, 0, 0);
   margin: 0 auto;
-
-  @media (min-width: 992px) {
-    max-width: 924px;
-  }
 `
 const Grid = styled.div`
   margin-top: 275px;
