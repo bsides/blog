@@ -1,11 +1,11 @@
 ---
-templateKey: blog-post
+templateKey: page
 title: 'Quem?'
 tags:
-  - blog
-  - feedback
-  - angular
-  - entrevista
+  - sobre
+  - quem
+  - rafael
+  - bsides
 ---
 
 Um geral sobre quem eu sou, de onde vim e o que eu faço. Ou uma boa história!
