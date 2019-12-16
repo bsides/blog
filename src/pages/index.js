@@ -103,7 +103,7 @@ export const pageQuery = graphql`
     }
     allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC }
-      filter: { fields: { slug: { ne: "/sobre/" } } }
+      filter: { frontmatter: {templateKey: {ne: "page"}} }
     ) {
       edges {
         node {

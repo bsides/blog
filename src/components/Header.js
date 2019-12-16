@@ -45,10 +45,8 @@ const HeaderWrapper = styled.header`
       border: 0;
       text-decoration: none;
     }
-    a.quem {
+    a.menu {
       position: absolute;
-      left: 320px;
-      top: 37px;
       background: #080458;
       color: rgb(0, 216, 216);
       padding: 5px 10px;
@@ -59,14 +57,25 @@ const HeaderWrapper = styled.header`
       display: block;
       font-size: 1.6rem;
 
-      @media only screen and (max-device-width: 480px) {
-        left: 215px;
-        top: 130px;
-      }
-
       &:hover {
         background: #b09000;
         color: rgb(8, 4, 88);
+      }
+    }
+    .quem {
+      left: 320px;
+      top: 37px;
+      @media only screen and (max-device-width: 480px) {
+        left: 115px;
+        top: 163px;
+      }
+    }
+    .como {
+      left: 420px;
+      top: 4px;
+      @media only screen and (max-device-width: 480px) {
+        left: 215px;
+        top: 130px;
       }
     }
   }
@@ -81,8 +90,11 @@ class Header extends React.Component {
             <h1>Blog do Rafa</h1>
             <img src={imgLogo} alt="Blog do Rafa" />
           </a>
-          <a className="quem" href="/sobre">
+          <a className="menu quem" href="/sobre">
             Quem?
+          </a>
+          <a className="menu como" href="/como">
+            Como?
           </a>
         </div>
       </HeaderWrapper>

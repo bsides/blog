@@ -49,20 +49,22 @@ const Article = styled.article`
 `
 const ReadingTime = styled.p``
 
-const FullPostMarkup = ({ title, theDate, readTime, children }) => (
+const FullPostMarkup = ({ title, theDate, readTime, hideMeta, children }) => (
   <Fragment>
     <h1>{title}</h1>
-    <MetaInfo>
-      <DateStyled>
-        <FontAwesomeIcon icon={faCalendarAlt} title="Data do artigo" />
-        {theDate}
-      </DateStyled>
-      <ReadingTime>
-        <FontAwesomeIcon icon={faClock} title="Tempo de leitura" />
-        {readTime}
-        <Separator>min</Separator> de leitura
-      </ReadingTime>
-    </MetaInfo>
+    {hideMeta && (
+      <MetaInfo>
+        <DateStyled>
+          <FontAwesomeIcon icon={faCalendarAlt} title="Data do artigo" />
+          {theDate}
+        </DateStyled>
+        <ReadingTime>
+          <FontAwesomeIcon icon={faClock} title="Tempo de leitura" />
+          {readTime}
+          <Separator>min</Separator> de leitura
+        </ReadingTime>
+      </MetaInfo>
+    )}
     {children}
   </Fragment>
 )
@@ -78,7 +80,7 @@ class BlogPostTemplate extends React.Component {
 
     const ttr = post.timeToRead
     const createFullPostMarkup = () => ({ __html: post.html })
-    const isSingle = post.fields.slug === '/sobre/'
+    const isSingle = post.frontmatter.templateKey === 'page'
 
     return (
       <Layout location={this.props.location} title={siteTitle} className="post">
@@ -103,6 +105,7 @@ class BlogPostTemplate extends React.Component {
           title={post.frontmatter.title}
           theDate={ptDate}
           readTime={ttr}
+          hideMeta={!isSingle}
         >
           <Article dangerouslySetInnerHTML={createFullPostMarkup()} />
         </FullPostMarkup>
@@ -147,6 +150,7 @@ export const pageQuery = graphql`
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
+        templateKey
       }
       fields {
         slug
