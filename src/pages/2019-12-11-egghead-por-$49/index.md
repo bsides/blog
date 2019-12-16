@@ -17,6 +17,10 @@ tags:
   - curso
 ---
 
+**Atualização 16/12/2019: Link da promoção expirou. Se quiser, entre em**
+**contato com eles pelo email**
+**[events arroba egghead ponto io](events@egghead.io) (em inglês) e peça!**
+
 Antes que me perguntem, eu não tenho nenhuma filiação ou algo a ver com a
 empresa em si. Sou só um fã do serviços deles e muito desesperado pra ter um
 ano bom em 2020. Pra qualquer um que passe por aqui também 👍
