@@ -12,7 +12,7 @@ Um geral sobre quem eu sou, de onde vim e o que eu faço. Ou uma boa história!
 
 ## Ficha técnica
 
-Meu nome é Rafael, também conhecido como @bsides, tenho 37 anos, sou de e vivo
+Meu nome é Rafael, também conhecido como @bsides, sou de 1982*, sou de e vivo
 em São Paulo, capital. Tenho 1,73m de altura, uns vários quilos e pareço esse
 emoji do rodapé (sonhei). Trabalho com web desde 1999, mas conectado desde um
 pouco antes. De lá pra cá vi bastante coisa diferente rolando.
@@ -88,5 +88,8 @@ todos, mas vivo voltando pra eles pra saber como estão de tempos em tempos.
 
 Se leu tudo isso parabéns. Estou também no [Twitter](https://twiter.com/bsides),
 Discord (bsides#9436) e [Telegram](https://t.me/bsides).
+
+* EDIT: Mudei de idade pra ano porque abrir PR sempre que muda o ano é
+deprimente.
 
 So long and thanks for the fish!
