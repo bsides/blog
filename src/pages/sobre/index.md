@@ -10,7 +10,7 @@ tags:
 
 Um geral sobre quem eu sou, de onde vim e o que eu faço. Ou uma boa história!
 
-## Fica técnica
+## Ficha técnica
 
 Meu nome é Rafael, também conhecido como @bsides, tenho 37 anos, sou de e vivo
 em São Paulo, capital. Tenho 1,73m de altura, uns vários quilos e pareço esse
