@@ -15,7 +15,7 @@
     "@weknow/gatsby-remark-twitter": "^0.2.3",
     "babel-plugin-styled-components": "^1.9.2",
     "browser": "^0.2.6",
-    "gatsby": "^2.18.8",
+    "gatsby": "^2.32.13",
     "gatsby-plugin-catch-links": "^2.0.9",
     "gatsby-plugin-feed": "^2.0.8",
     "gatsby-plugin-google-analytics": "^2.0.5",
